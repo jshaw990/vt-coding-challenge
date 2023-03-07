@@ -1,0 +1,19 @@
+{
+  "name": "vt-coding-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jshaw990/vt-coding-challenge.git"
+  },
+  "author": "Jayden Shaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshaw990/vt-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/jshaw990/vt-coding-challenge#readme"
+}

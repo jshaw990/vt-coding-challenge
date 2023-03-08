@@ -35,9 +35,8 @@ How to run this project:
 
 ### Server Deployment
 14. Ensure you have fully completed the above steps and you observe blog posts within your browser
-15. Enter the server directory with `cd server`
-16. Run the command `npm run serve`
-17. After the build has completed, deploy the project to a static server
+15. Run the following command from the root directory `docker-compose up`
+16. Once the docker build has completed, push the docker build to your web server
 
 ---
 

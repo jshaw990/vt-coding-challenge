@@ -17,12 +17,3 @@ a {
 .blog-post img {
   width: 300px;
 }
-
-.blog-post a {
-  color: #17173A !important;
-}
-
-.blog-post a:hover {
-  /* color: #17173A; */
-  text-decoration: double !important;
-}

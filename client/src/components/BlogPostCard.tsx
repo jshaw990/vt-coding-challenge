@@ -9,7 +9,7 @@ interface IProps {
     post: IBlogPost
 }
 
-function BlogPostCard(props: IProps) {
+export default function BlogPostCard(props: IProps) {
     return (
         <Box 
             sx={{ 
@@ -26,7 +26,7 @@ function BlogPostCard(props: IProps) {
                 <img 
                     src={props.post.image} 
                     alt={props.post.title} 
-                    width='300px' 
+                    width='100%' 
                     style={{ borderRadius: '24px', marginBottom: '16px' }} 
                 />
                 <Typography variant='h6' component='div' flexGrow={1}>
@@ -36,5 +36,3 @@ function BlogPostCard(props: IProps) {
         </Box>
     )
 }
-
-export default BlogPostCard

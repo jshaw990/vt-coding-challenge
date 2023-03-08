@@ -1,6 +1,7 @@
 import IBlogPost from "../../../types/blogPost.type"
+// require('dotenv').config()
 
-const BASE_URL = 'http://localhost:8080/api/blog'
+const BASE_URL = process.env.REACT_APP_API_URL
 
 const getRequest = async (url: string = '', skip: number = 0) => {
     try {

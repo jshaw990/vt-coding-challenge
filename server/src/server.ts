@@ -23,7 +23,7 @@ db.sequelize.sync()
 require('./routes/blogPost.routes')(app)
 
 // Port to listen for request on
-const PORT = process.env.PORT || 8080
+const PORT = process.env.RUNNING_PORT || 8080
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`)
 })

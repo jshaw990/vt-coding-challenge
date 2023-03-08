@@ -4,6 +4,12 @@
   "description": "",
   "main": "server/server.ts",
   "scripts": {
+    "client": "cd client && npm run start",
+    "server": "cd server && npm start",
+    "client-i": "cd client && npm install",
+    "server-i": "cd server && npm install",
+    "install-all": "npm install && \"npm run client-i\" && \"npm run server-i\"",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/jshaw990/vt-coding-challenge/issues"
   },
-  "homepage": "https://github.com/jshaw990/vt-coding-challenge#readme"
+  "homepage": "https://github.com/jshaw990/vt-coding-challenge#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
 }

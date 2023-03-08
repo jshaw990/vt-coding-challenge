@@ -1,8 +1,8 @@
 import getRequest from '../utils/httpRequest'
 
 class BlogPostService {
-    getAll() {
-        return getRequest()
+    getAll(skip: number = 0) {
+        return getRequest('', skip)
     }
 
     getBySlug(slug: string) {

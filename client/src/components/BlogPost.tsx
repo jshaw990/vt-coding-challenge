@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
 import Skeleton from '@mui/material/Skeleton'
 
@@ -27,7 +28,7 @@ export default function App() {
   return (
     <div className='blog-post'>
         <Container maxWidth='md'>
-            <Box sx={{  }}>
+            <Link to='/'><Button variant='outlined'>Back</Button></Link>
                 {
                     blogPost === undefined 
                     ? <div>
@@ -39,7 +40,6 @@ export default function App() {
                             <div dangerouslySetInnerHTML={{ __html: blogPost.content.toString() }} />
                         </div>
                 }
-            </Box>
         </Container>
     </div>
   )

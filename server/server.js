@@ -5,12 +5,9 @@ const cors = require('cors')
 const app = express()
 
 const corsOptions = {
-    origin: 'http://localhost:8081'
+    origin: process.env.ORIGIN || 'http://localhost:3000'
 }
-
 app.use(cors(corsOptions))
-
-// parse request of content-type - application/json
 app.use(bodyParser.json())
 
 const db = require('./models')
@@ -23,9 +20,9 @@ db.sequelize.sync()
     })
 
 // base route
-app.get('/', (req, res) => {
-    res.json({ message: 'Welcome!' })
-})
+// app.get('/', (req, res) => {
+//     res.json({ message: 'Welcome!' })
+// })
 
 require('./routes/blogPost.routes')(app)
 

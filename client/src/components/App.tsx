@@ -1,11 +1,9 @@
-import React from 'react';
+import BlogSearchContainer from './BlogPostContainer';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      Client App
+        <BlogSearchContainer />
     </div>
   );
 }
-
-export default App;

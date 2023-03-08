@@ -4,8 +4,6 @@ module.exports = app => {
 
     router.get('/', blogPost.findAll)
 
-    // router.get('/:id', blogPost.findOneById)
-
     router.get('/:slug', blogPost.findOneBySlug)
 
     app.use('/api/blog', router)

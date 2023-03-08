@@ -1,8 +1,8 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const cors = require('cors')
+import express = require('express')
+import bodyParser = require('body-parser')
+import cors = require('cors')
 
-const app = express()
+export const app = express()
 
 const corsOptions = {
     origin: process.env.ORIGIN || 'http://localhost:3000'
@@ -10,7 +10,8 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(bodyParser.json())
 
-const db = require('./models')
+import db = require('./models')
+
 db.sequelize.sync()
     .then(() => {
         console.log('Synced DB')
@@ -18,11 +19,6 @@ db.sequelize.sync()
     .catch((err) => {
         console.log(`Failed to sync DB: ${err.message}`)
     })
-
-// base route
-// app.get('/', (req, res) => {
-//     res.json({ message: 'Welcome!' })
-// })
 
 require('./routes/blogPost.routes')(app)
 

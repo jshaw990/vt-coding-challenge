@@ -17,24 +17,27 @@ Jayden Shaw\
 
 ## Usage 
 How to run this project:
-- Clone or download this repository as a zip
-- Open the project in any IDE, I recommend Visual Studio Code
+1. Clone or download this repository as a zip
+2. Open the project in any IDE, I recommend Visual Studio Code
 
 ### Local
-1. Enter the 'server' directory with the command `cd server`
-2. Install all NPM packages with the command `npm install`
-3. Create a file in the server directory called `.env`
-4. Copy the contents of the `.env.example` file and paste into the `.env` file you created
-5. Enter your credentials into the space provided in your `.env` file
-6. Move to the client directory with `cd ../` and then `cd client`
-7. Complete steps 2 to 5 within the client directory
-8. After you have installed NPM packages and have your `.env` file setup in the client directory, return to the route directory with `cd ../`
-9. Install the route NPM package with `npm install`
-10. Run the `npm run start` command
-11. Navigate to [http://localhost:3000/](http://localhost:3000/) where you will see an instance of the application running
+3. Enter the 'server' directory with the command `cd server`
+4. Install all NPM packages with the command `npm install`
+5. Create a file in the server directory called `.env`
+6. Copy the contents of the `.env.example` file and paste into the `.env` file you created
+7. Enter your credentials into the space provided in your `.env` file
+8. Move to the client directory with `cd ../` and then `cd client`
+9. Complete steps 4 to 7 within the client directory
+10. After you have installed NPM packages and have your `.env` file setup in the client directory, return to the route directory with `cd ../`
+11. Install the route NPM package with `npm install`
+12. Run the `npm run start` command
+13. Navigate to [http://localhost:3000/](http://localhost:3000/) where you will see an instance of the application running
 
 ### Server Deployment
-
+14. Ensure you have fully completed the above steps and you observe blog posts within your browser
+15. Enter the server directory with `cd server`
+16. Run the command `npm run serve`
+17. After the build has completed, deploy the project to a static server
 
 ---
 
